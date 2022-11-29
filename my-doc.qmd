@@ -15,7 +15,7 @@ library(ggplot2)
 config <- config::get()
 
 df <- palmerpenguins::penguins |>
-  (\(x)dplyr::filter(x, complete.cases(x)))()
+  (\(x) x[complete.cases(x),])()
 ```
 
 This report was created using the `r config$config_name` configuration.
