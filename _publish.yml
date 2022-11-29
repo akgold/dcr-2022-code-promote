@@ -1,9 +1,4 @@
 - source: my-doc.qmd
   quarto-pub:
-<<<<<<< HEAD
-  - id: 60b7a849-366f-4978-941b-5086f0b9ec6d
-    url: https://alexkgold.quarto.pub/palmer-penguins-report-dev/
-=======
-  - id: 17ec82c7-ba70-4df8-85c2-b94c1e1b8aad
-    url: https://alexkgold.quarto.pub/palmer-penguins-report-test/
->>>>>>> bcaa2dc (Add work)
+    - id: 17ec82c7-ba70-4df8-85c2-b94c1e1b8aad
+      url: 'https://quartopub.com/sites/alexkgold/palmer-penguins-report-test'
