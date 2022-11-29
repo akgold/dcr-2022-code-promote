@@ -1,0 +1,16 @@
+prod:
+  config_name: Prod
+  inherits: test
+  quarto-pubs-id: 7fb37ad4-6649-48a7-a989-83dfa5391e65
+  quarto-pubs-url: https://alexkgold.quarto.pub/palmer-penguins-report/
+
+test:
+  config_name: Test
+  line_color: orange
+
+default:
+  config_name: Dev
+  line_color: purple
+  quarto-pubs-id: 60b7a849-366f-4978-941b-5086f0b9ec6d
+  quarto-pubs-url: https://alexkgold.quarto.pub/palmer-penguins-report-dev/
+
