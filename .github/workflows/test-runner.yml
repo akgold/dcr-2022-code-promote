@@ -4,6 +4,9 @@ on:
 
 name: Quarto Test Publish
 
+env:
+  R_CONFIG_ACTIVE: test
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -29,4 +32,3 @@ jobs:
         with:
           target: quarto-pub
           QUARTO_PUB_AUTH_TOKEN: ${{ secrets.QUARTO_PUB_AUTH_TOKEN }}
-          R_CONFIG_ACTIVE: test
