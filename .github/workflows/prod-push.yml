@@ -7,6 +7,7 @@ name: Quarto Publish
 
 env:
   R_CONFIG_ACTIVE: prod
+  RENV_CONFIG_REPOS_OVERRIDE: https://packagemanager.posit.co/cran/__linux__/jammy/latest
 
 jobs:
   build-deploy:
