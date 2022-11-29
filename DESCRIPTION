@@ -1,0 +1,10 @@
+Package: penguinReportR
+Title: Penguin Report
+Version: 1.0.0
+Authors@R:
+    person("Alex", "Gold", , "alex.gold@posit.co", role = c("aut", "cre"))
+Description: Helper functions to write a report on Palmer Penguins.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
