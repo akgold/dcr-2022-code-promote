@@ -29,6 +29,9 @@ jobs:
         with:
           cache-version: 1
 
+      - name: Create _publish.yml
+        run: Rscript write_publish_yml.R
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:

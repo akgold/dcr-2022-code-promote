@@ -42,21 +42,3 @@ df |>
   ggtitle("Penguin Flipper Length vs Body Mass") +
   labs(color = "Species")
 ```
-
-```{r}
-#| include: false
-
-list(
-  list(
-    source = "my-doc.qmd",
-    `quarto-pub` = list(
-      list(
-        id = config$`quarto-pubs-id`,
-        url = config$`quarto-pubs-url`
-      )
-    )
-  )
-) |>
-  yaml::write_yaml("_publish.yml")
-```
-
