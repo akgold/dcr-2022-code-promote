@@ -2,7 +2,7 @@ on:
   pull_request:
     types: [opened, reopened]
 
-name: Quarto Test Publish
+name: Run Automated Tests
 
 env:
   RENV_CONFIG_REPOS_OVERRIDE: https://packagemanager.posit.co/cran/__linux__/jammy/latest
