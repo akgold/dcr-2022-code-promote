@@ -12,10 +12,11 @@ Here are some palmer penguins stats
 
 ```{r, setup}
 library(ggplot2)
+source("R/funs.R")
 config <- config::get()
 
 df <- palmerpenguins::penguins |>
-  (\(x)dplyr::filter(x, complete.cases(x)))()
+  filter_penguin_data()
 ```
 
 This report was created using the `r config$config_name` configuration.
