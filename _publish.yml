@@ -1,0 +1,4 @@
+- source: my-doc.qmd
+  quarto-pub:
+  - id: 60b7a849-366f-4978-941b-5086f0b9ec6d
+    url: https://alexkgold.quarto.pub/palmer-penguins-report-dev/
