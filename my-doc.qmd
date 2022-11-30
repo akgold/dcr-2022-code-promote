@@ -16,7 +16,7 @@ config <- config::get()
 
 set.seed(102888)
 df <- palmerpenguins::penguins |>
-  (\(x) x[complete.cases(x),])() |>
+  tidyr::drop_na() |>
   dplyr::slice_sample(prop = config$sample_frac)
 ```
 
