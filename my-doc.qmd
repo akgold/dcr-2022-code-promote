@@ -14,11 +14,13 @@ Here are some palmer penguins stats.
 library(ggplot2)
 config <- config::get()
 
+set.seed(102888)
 df <- palmerpenguins::penguins |>
-  (\(x) x[complete.cases(x),])()
+  tidyr::drop_na() |>
+  dplyr::slice_sample(prop = config$sample_frac)
 ```
 
-This report was created using the `r config$config_name` configuration.
+This report was created using the `r config$config_name` configuration, it uses `r nrow(df)` data points.
 
 ```{r}
 #| message: false
@@ -34,7 +36,6 @@ df |>
   geom_point() +
   stat_smooth(
     aes(group = species), 
-    color = config$line_color
   ) +
   theme_minimal() +
   xlab("Flipper Length (mm)") +
