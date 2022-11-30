@@ -8,7 +8,7 @@ editor: visual
 
 The last update was `r Sys.time()`
 
-Here are some palmer penguins stats
+Here are some palmer penguins stats.
 
 ```{r, setup}
 library(ggplot2)

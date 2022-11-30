@@ -11,3 +11,6 @@ list(
   )
 ) |>
   yaml::write_yaml("_publish.yml")
+
+readLines("_publish.yml")
+list.files()
