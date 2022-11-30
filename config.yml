@@ -6,10 +6,10 @@ prod:
 
 test:
   config_name: Test
-  line_color: orange
+  sample_frac: 1
 
 default:
   config_name: Dev
-  line_color: purple
+  sample_frac: 0.5
   quarto-pubs-id: 17ec82c7-ba70-4df8-85c2-b94c1e1b8aad
   quarto-pubs-url: https://alexkgold.quarto.pub/palmer-penguins-report-test/
