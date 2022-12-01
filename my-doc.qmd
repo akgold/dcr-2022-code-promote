@@ -17,7 +17,9 @@ config <- config::get()
 set.seed(102888)
 df <- palmerpenguins::penguins |>
   tidyr::drop_na() |>
-  dplyr::slice_sample(prop = config$sample_frac)
+  dplyr::slice_sample(
+    prop = config$sample_frac
+  )
 ```
 
 This report was created using the `r config$config_name` configuration, it uses `r nrow(df)` data points.
@@ -37,7 +39,7 @@ df |>
   stat_smooth(
     aes(group = species), 
   ) +
-  theme_minimal() +
+  theme_bw() +
   xlab("Flipper Length (mm)") +
   ylab("Body Mass (g)") +
   ggtitle("Penguin Flipper Length vs Body Mass") +
