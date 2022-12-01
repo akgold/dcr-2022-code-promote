@@ -39,7 +39,7 @@ df |>
   stat_smooth(
     aes(group = species), 
   ) +
-  theme_bw() +
+  theme_minimal() +
   xlab("Flipper Length (mm)") +
   ylab("Body Mass (g)") +
   ggtitle("Penguin Flipper Length vs Body Mass") +

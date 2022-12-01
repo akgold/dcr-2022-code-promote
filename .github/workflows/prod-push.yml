@@ -10,7 +10,7 @@ env:
   RENV_CONFIG_REPOS_OVERRIDE: https://packagemanager.posit.co/cran/__linux__/jammy/latest
 
 jobs:
-  build-deploy:
+  publish-quarto-doc:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -24,7 +24,7 @@ jobs:
         with:
           r-version: '4.2.0'
 
-      - name: Install R Dependencies
+      - name: Install R Package Dependencies
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1
